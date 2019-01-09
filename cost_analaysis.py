@@ -20,6 +20,6 @@ if answer == 'y' or answer == 'Y':
     now = date.today()
     days = (date1 - now).days
     print ("You will break even in {} uses".format(totalUses))
-    print ("You will need to use {:.1f} per day for {} days".format(totalUses/days, days))
+    print ("You will need to use {} per day for {} days".format(m.ceil(totalUses/days), days))
 else:
     print ("You will break even in {} uses".format(totalUses))
